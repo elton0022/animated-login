@@ -1,12 +1,20 @@
-html, body{
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
     background-color: #520dc2;
-    color: #fff;
     font-family: Verdana, Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased , !important;
+    color: #fff;
 }
 
 .card{
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     height: 300px;
     margin: 30px auto;
     padding: 20px;
@@ -19,7 +27,7 @@ html, body{
 
 .card-header{
     text-align: center;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .card-body{
@@ -33,8 +41,8 @@ html, body{
 .card-body input{
     margin-bottom: 10px;
     width: 100%;
-    max-width: 200px;
-    height: 25px;
+    height: 35px;
+    padding: 10px;
     border: 0px solid;
     border-radius: 5px;
 }
@@ -48,14 +56,21 @@ html, body{
     margin-bottom: 20px;
 }
 
-.card-footer button{
+button{
     width: 100%;
-    max-width: 200px;
+    max-width: 100px;
     height: 35px;
     padding: 10px;
     border: 0px;
     border-radius: 5px;
-    background-color: #20c997;
     color: white;
     cursor: pointer;
 }
+
+button#register{
+    background: #0d6efd;
+}
+
+button#enter{
+    background: #20c997;
+} 
