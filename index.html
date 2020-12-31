@@ -5,25 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Animado</title>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="card">
+    <div class="card" onmouseover="t()">
         <div class="card-header">
             <h5 id="card-title">Faça seu login</h5>
         </div>
         <div class="card-body">
             <label for="email">Email</label>
-            <input id="email" type="email" placeholder="Email">
+            <input id="email" type="email">
             <label for="password">Password</label>
-            <input id="password" type="password" placeholder="Password">
+            <input id="password" type="password">
         </div>
         <div class="card-footer">
-            <button id="enter">Entrar</button>
+            <button type="button" id="enter" onclick="login()">Entrar</button>
         </div>
     </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
