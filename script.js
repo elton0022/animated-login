@@ -15,13 +15,3 @@ function login(){
         $(".card").effect("shake", "slow");
     }   
 }
-
-function t(){
-
-    card.addEventListener("mouseenter", (e) => {
-       
-        card.style.transform = "translateZ(150px)";
-       
-    });
-    
-}
